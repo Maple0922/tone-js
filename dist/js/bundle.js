@@ -11253,7 +11253,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sas
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var tone__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tone */ \"./node_modules/tone/build/esm/index.js\");\n\n\nconst synth = new tone__WEBPACK_IMPORTED_MODULE_0__[\"Synth\"]().toMaster();\n\nwindow.addEventListener('mousedown', playSound);\nwindow.addEventListener('touchstart', playSound);\nwindow.addEventListener('keydown', playSound);\n\nfunction playSound(e) {\n\n  var chord = e.target.dataset.chord;\n\n  if (typeof chord === \"undefined\"){\n    return;\n  }\n\n  synth.triggerAttackRelease(chord, '2n');\n}\n\n\n//# sourceURL=webpack:///./src/js/tone.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var tone__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tone */ \"./node_modules/tone/build/esm/index.js\");\n\n\nconst synth = new tone__WEBPACK_IMPORTED_MODULE_0__[\"Synth\"]().toMaster();\n\nwindow.addEventListener('mousedown', playSound);\nwindow.addEventListener('touchstart', playSound);\nwindow.addEventListener('keydown', playSound);\n\nfunction playSound(e) {\n\n  var chord = e.target.dataset.chord;\n\n  if (typeof chord === \"undefined\"){\n    return;\n  }\n\n  synth.triggerAttackRelease(chord, '4n');\n}\n\n\n//# sourceURL=webpack:///./src/js/tone.js?");
 
 /***/ }),
 

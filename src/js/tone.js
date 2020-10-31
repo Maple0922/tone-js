@@ -14,5 +14,5 @@ function playSound(e) {
     return;
   }
 
-  synth.triggerAttackRelease(chord, '2n');
+  synth.triggerAttackRelease(chord, '4n');
 }
