@@ -14,8 +14,8 @@
     </header>
     <main class="main">
       <div class="main__container">
-        {{ message }}
-        <input class="btn btn-primary" type="button" value="play!">
+        <p>{{ message }}</p>
+        <input type="button" v-for="chord in chords" class="btn btn-primary d-inline-block mr-1" :value="chord" :data-chord="chord">
       </div>
     </main>
   </div>
