@@ -1,7 +1,9 @@
 // import
 
-// share
+// library
+@import "~bootstrap/scss/bootstrap.scss";
 
+// share
 @import "share/variables";
 @import "share/mixins";
 @import "share/reset";
